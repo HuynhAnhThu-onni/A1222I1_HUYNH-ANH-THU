@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng ký</title>
+</head>
+<body>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  #{
+    padding: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background: #32CD32;
+    font-weight: 700;
+    color: #fff;
+  }
+  #X:hover {
+    background: #f12711;
+    background: linear-gradient(to right, #32CD32, #f5af19);
+  }
+
+  #a{
+    background-color:snow;
+    padding: 30px 50px 30px 50px;
+  }
+</style>
+
+<form action="" method="get">
+  <div class="form" id="form" </div>
+  <div id="a">
+  <tr>
+    <span>Họ và tên:</span><br>
+    <input type="text" name="Tên" id="Họ và tên"/> <br>
+  </tr> <br>
+
+  <tr>
+    <span> Email:</span><br>
+    <input type="email" name="email" id="Email:"/> <br>
+  </tr> <br>
+
+  <tr>
+    <span> Số điện thoại:</span><br>
+    <input type="number" name="phone" id="Số điện thoại:"/> <br>
+  </tr> <br>
+
+  <tr>
+    <span>Giới tính:</span>
+    <input type="radio" name="gender"> Nam
+    <input type="radio" name="gender"checked/> Nữ
+  </tr>
+
+  <br><br>
+  <td>
+    <input type="submit" value="Đăng ký" id="X">
+  </td>
+</body>
+</html>

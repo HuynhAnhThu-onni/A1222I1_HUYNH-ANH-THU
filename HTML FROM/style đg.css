@@ -1,0 +1,64 @@
+#form{
+    font-family: arial;
+    background: #B0E0E6;
+    opacity: 100%;
+    max-width:950px;
+    padding: 30px 50px 30px 50px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 50%), 0 5px 5px 0 rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    margin: auto;
+}
+h2{
+    font-size: 35px;
+    line-height: 60px;
+    color: cornsilk;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: #FF4500;
+    margin-top:-70px;
+}
+#a{
+    background-color:snow;
+    padding: 100px;
+}
+#Name{
+    width: 95%;
+    line-height: 20px;
+}
+#Email{
+    width: 85%;
+    line-height: 20px;
+}
+#c{
+    color:#FF6347;
+}
+#X{
+    padding: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background: #32CD32;
+    font-weight: 700;
+    color: #fff;
+}
+#X:hover {
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19);
+    background: linear-gradient(to right, #f12711, #f5af19);
+}
+//
+#Formm{
+    background-color:khaki;
+}
+h3{
+    font-size: 35px;
+    line-height: 60px;
+    color: #0000CD;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+#Điện thoại{
+    background: #FF6347;
+}

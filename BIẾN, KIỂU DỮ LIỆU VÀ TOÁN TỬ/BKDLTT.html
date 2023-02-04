@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập</title>
+</head>
+
+<!--BT1-->
+<body>
+<div class="box" style="text-align: center">
+    <p style="text-align: center;">ĐIỂM TRUNG BÌNH 3 MÔN</p>
+    <input type="text" id="Physical" placeholder="Điểm Vật Lý">
+    <input type="text" id="chemistry" placeholder="Điểm Hóa Học">
+    <input type="text" id="biology" placeholder="Điểm Sinh Học">
+    <button onclick="avgSubect()">Summit</button>
+    <br>
+    <input type="text" readonly id="output2" placeholder="Tổng điểm" style="margin-top: 12px;">
+    <br>
+    <input type="text" readonly id="output1" placeholder="Kết Quả" style="margin-top: 12px;">
+</div>
+<script>
+    function avgSubect(){
+        var a= document.getElementById("Physical").value.trim()
+        var b= document.getElementById("chemistry").value.trim()
+        var c= document.getElementById("biology").value.trim()
+        var avg = (parseFloat(a) + parseFloat(b) +parseFloat(c)) /3
+        var s = (parseFloat(a) + parseFloat(b) +parseFloat(c))
+        document.getElementById('output2').value = s;
+        document.getElementById('output1').value = avg;
+    }
+</script>
+</body>
+<!--BT2-->
+<body>
+<div class="box" style="text-align: center">
+    <p style="text-align: center;">ĐỔI NHIỆT ĐỘ</p>
+    <input type="text" id="temp_C" placeholder="Nhập độ C">
+    <button onclick="fSubect()">Summit</button>
+    <br>
+    <input type="text" readonly id="output3" placeholder="Độ F" style="margin-top: 12px;">
+</div>
+<script>
+    function fSubect(){
+        var c= document.getElementById("temp_C").value.trim()
+        var f =(((parseFloat(c)*9)/5) +32)
+        document.getElementById('output3').value = f;
+    }
+</script>
+</body>
+
+<!--BT3-->
+<body>
+<div class="box" style="text-align: center">
+    <p style="text-align: center;">DIỆN TÍCH HÌNH TRÒN</p>
+    <input type="text" id="radian" placeholder="Bán kính hình tròn">
+    <button onclick="SSubect()">Summit</button>
+    <br>
+    <input type="text" readonly id="output" placeholder="Diện tích" style="margin-top: 12px;">
+    <br>
+</div>
+<script>
+    function SSubect(){
+        var r = document.getElementById("radian").value.trim()
+        var S = parseFloat(r) * parseFloat(r) * Math.PI ;
+        document.getElementById('output').value = S;
+    }
+</script>
+
+<!--BT4-->
+<body>
+<div class="box" style="text-align: center">
+    <p style="text-align: center;">CHU VI HÌNH TRÒN</p>
+    <input type="text" id="radian1" placeholder="Bán kính hình tròn">
+    <button onclick="CSubect()">Summit</button>
+    <br>
+    <input type="text" readonly id="output4" placeholder="Chu vi" style="margin-top: 12px;">
+    <br>
+</div>
+<script>
+    function CSubect(){
+        var r = document.getElementById("radian1").value.trim()
+        var C = (2 * (Math.PI * (parseFloat(r)))) ;
+        document.getElementById('output4').value = C;
+    }
+</script>
+</body>
+</body>
+</html>

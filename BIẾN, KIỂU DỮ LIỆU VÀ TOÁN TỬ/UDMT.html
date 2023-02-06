@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ỨNG DỤNG MÁY TÍNH</title>
+</head>
+<body>
+
+<div class="box" style="text-align: center;font-size: x-large" >
+  <P style="text-align: center;color: #FF4500">Ứng dụng máy tính</P>
+  <input type="text" id="input a" placeholder="Nhập số a ">
+  <input type="text" id="input b" placeholder="Nhập số b">
+
+  <br>
+  <button onclick="addSubect()">Add(+)</button>
+  <button onclick="subSubect()">Sub(-)</button>
+  <button onclick="mutSubect()">Mut(*)</button>
+  <button onclick="divSubect()">Div(/)</button>
+  <br>
+  <input type="text" readonly id="ketqua" placeholder="Kết quả" style="margin-top: 12px;">
+</div>
+<script>
+  function addSubect(){
+    var a= document.getElementById("input a").value.trim()
+    var b= document.getElementById("input b").value.trim()
+    var add = (parseFloat(a) + parseFloat(b) )
+    document.getElementById('ketqua').value = add;
+  }
+
+  function subSubect(){
+    var a= document.getElementById("input a").value.trim()
+    var b= document.getElementById("input b").value.trim()
+    var sub = (parseFloat(a) - parseFloat(b) )
+    document.getElementById('ketqua').value = sub;
+  }
+
+  function mutSubect(){
+    var a= document.getElementById("input a").value.trim()
+    var b= document.getElementById("input b").value.trim()
+    var mut = (parseFloat(a) * parseFloat(b) )
+    document.getElementById('ketqua').value = mut;
+  }
+
+  function divSubect(){
+    var a= document.getElementById("input a").value.trim()
+    var b= document.getElementById("input b").value.trim()
+    var div = (parseFloat(a) / parseFloat(b) )
+    document.getElementById('ketqua').value = div;
+  }
+</script>
+
+</body>
+</html>
+
+
+

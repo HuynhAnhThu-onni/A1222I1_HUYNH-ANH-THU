@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<div class="box" >
+  <p style="text-align: center;">ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</p>
+  <span>Amount</span><br>
+  <input type="text" id="input" placeholder="1">
+  <br>
+  <span>From Curency</span><br>
+  <td>
+    <select>
+      <option value="Việt Nam">Việt Nam</option>
+    </select>
+  </td>
+  <br>
+  <span>To Currency</span><br>
+  <td>
+    <select>
+      <option value="Mỹ">USD</option>
+    </select>
+  </td>
+<br> <br>
+  <td>
+    <button type="button" onclick="chuyen()" style="background-color: #32CD32;color: #FFFFFF">
+      Convert</button>
+  </td>
+  <br>
+</div>
+</tr>
+<script>
+  function chuyen() {
+    Tien = document.getElementById("input").value;
+    var result = Tien / 23000;
+    document.getElementById("result").innerHTML="Result : "+result+"USD";
+  }
+</script>
+<tr>
+  <td><p id="result"></p></td>
+</tr>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYỆN TẬP CẤU TRÚC ĐIỀU KIỆN 1</title>
+</head>
+<body>
+
+<!--BT1-->
+<script>
+  let a = +prompt("Nhập số thứ nhất:");
+  let b = +prompt("Nhập số thứ hai:");
+  if (a % b == 0) {
+    document.write("Số a chia hết cho số b");
+  } else {
+    document.write("Số a không chia hết cho số b");
+  }
+</script>
+
+<!-- BT2-->
+<script>
+  let a = +prompt("Nhập số tuổi:");
+  if (a >= 15) {
+    document.write("Đủ điều kiện vào lớp 10");
+  } else {
+    document.write("Không đủ điều kiện vào lớp 10");
+  }
+</script>
+
+<!--BT 3-->
+<script>
+  let a = +prompt("Nhập số nguyên:(bất kì)");
+  if (a > 0) {
+    document.write("Số lớn hơn 0");
+  } else if (a == 0){
+    document.write("Số bằng 0");
+  } else {
+    document.write("Số nhỏ hơn 0");
+  }
+</script>
+
+<!--BT 4-->
+<script>
+  let a = +prompt("Số thứ 1:");
+  let b = +prompt("Số thứ 2:");
+  let c = +prompt("Số thứ 3:");
+  if (a > b && a > c) {
+    document.write("Số thứ 1 là số lớn nhất");
+  } else if (a < b && b > c) {
+    document.write("Số thứ 2 là số lớn nhất");
+  } else {
+    document.write("Số thứ 3 là số lớn nhất");
+  }
+</script>
+
+<!--BT 5-->
+<script>
+  let a = prompt("Điểm bộ phân 1:");
+  let b = prompt("Điểm giữa kỳ:");
+  let c = prompt("Điểm cuối kỳ:");
+  let d = (a * 2 + b * 3 + c * 5) / 10
+  if (a >= 8.0) {
+    document.write("HỌC SINH GIỎI");
+  } else if (a >= 6.5) {
+    document.write("HỌC SINH KHÁ")
+  } else if (a >= 5.0) {
+    document.write("HỌC SINH TRUNG BÌNH")
+  } else {
+    document.write("HỌC SINH YẾU")
+  }
+</script>
+
+<!--BT 6-->
+<script>
+    let a = +prompt("Nhập doanh số bán hàng: (triệu)");
+    let b
+    if (a >= 10.000){
+        b = a * 0.3;
+        document.write("50% hoa hồng")}
+    else if (a >= 10.000){
+        b = a * 0.2;
+        document.write("30% hoa hồng")}
+    else if (a >= 10.000){
+        b = a * 0.1;
+        document.write("20% hoa hồng")}
+    else
+    document.write("Số tiền hoa hồng nhận được là: "+ b.toLocaleString('vi-VN',{style: 'currency',currency: 'VND'}))
+</script>
+
+<!--BT 7-->
+<script>
+    let a = +prompt("Số giây gọi điện:(s)");
+    a = 30
+    let b = a * 1650;
+    document.write("Số tiền cước tháng này của gia đình bạn là: " + b + "vnđ")
+</script>
+
+</body>
+</html>

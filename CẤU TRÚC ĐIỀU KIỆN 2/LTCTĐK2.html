@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYỆN TẬP CẤU TRÚC ĐIỀU KIỆN 2</title>
+</head>
+<body>
+
+<!--BT1-->
+<script>
+  let a =+prompt("Nhập độ C : ");
+  let b
+  b = a*9/5+32
+  document.write("Nhiệt độ F là : "+b)
+</script>
+
+<!--BT2-->
+<script>
+  let m=+prompt("Nhập độ dài đơn vị :(m)")
+  let ft = m * 3.2808
+  document.write("Độ dài feet là : "+ft)
+</script>
+
+<!--BT3-->
+<script>
+  let a =+prompt("Nhập độ dài cạnh hình vuông : ")
+  let s = a*a
+  document.write("Diện tích hình vuôn là : "+s);
+</script>
+
+<!--BT4-->
+<script>
+  let a =+prompt("Nhập chiều rộng hinnhf chữ nhật : ")
+  let b =+prompt("Nhập chiều dài hình chữ nhật : ")
+  let s = a*b
+  document.write(" Diện tích hình chữ nhật là : "+s)
+</script>
+
+<!--BT5-->
+<script>
+  let a =+prompt("Nhập độ dài cạnh kề hình chữ nhật : ")
+  let b =+prompt("Nhập độ dài cạnh kề thứ 2 : ")
+  let s =1/2*(a*b)
+  document.write("Diện tích hình tam giác là: "+s)
+</script>
+
+<!--BT6-->
+<script>
+  let a=+prompt("Nhập số thứ 1 :")
+  let b=+prompt("Nhập số thứ 2 :")
+  if (a == 0 && b == 0){
+    document.write("Phương trình vô số nghiệm");
+  }
+  else if (a != 0 && b == 0){
+    document.write("Phương trình có nghiệm x = 0");
+  }
+  else if (a == 0 && b != 0){
+    document.write("Phương trình vô nghiệm ");
+  }
+  else if (b<0) {
+    document.write("Phương trình có nghiệm x = " + (-b/a));
+  }else {
+    document.write("Phương trình có nghiệm x = "+(-b/a))
+  }
+</script>
+
+<!--BT8-->
+<script>
+  let a =+prompt("Nhập số tuổi : ")
+  if (a>0 && a<100)
+    document.write("Số tuổi của 1 người")
+  else
+    document.write("Không phải là số tuổi của 1 người");
+</script>
+
+</body>
+</html>

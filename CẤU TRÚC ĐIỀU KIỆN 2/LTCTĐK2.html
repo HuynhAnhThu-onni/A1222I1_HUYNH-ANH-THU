@@ -64,6 +64,22 @@
   }
 </script>
 
+<!--BT7-->
+<script>
+    let a =+prompt("Nhập số thứ 1 ")
+    let b =+prompt("Nhập số thứ 2 ")
+    let c =+prompt("Nhập số thứ 3 ")
+    let t = b*b-4*a*c;
+    let x1=(-b+Math.sqrt(t))/2
+    let x2=(-b-Math.sqrt(t))/2
+    if (t<0)
+        document.write("Phương trình vô nghiệm")
+    else if (t = 0)
+        document.write("Phương trình có nghiệm kép : x1=x2="+(-b/2*a))
+    else
+        document.write("Phương trình có 2 nghiệm phân biệt : x1 = " +x1 +" và "+ "x2= " +x2 )
+</script>
+
 <!--BT8-->
 <script>
   let a =+prompt("Nhập số tuổi : ")
@@ -73,5 +89,88 @@
     document.write("Không phải là số tuổi của 1 người");
 </script>
 
+<!--BT9-->
+<script>
+    let a =+prompt("Nhập độ dài cạnh thứ 1 ")
+    let b =+prompt("Nhập độ dài cạnh thứ 2 ")
+    let c =+prompt("Nhập độ dài cạnh thứ 3")
+    if(a>0 && b>0 && c>0){
+        if (a + b > c){
+            if(b + c > a){
+                if(a + c > b){
+                    document.write("Độ dài 3 cạnh của 1 tam giác ")
+                }
+            }
+        }else {
+            document.write("Độ dài 3 cạnh không phải của 1 tam giác ")
+        }
+    }
+</script>
+
+<!--BT10-->
+<script>
+    let a =+prompt("Nhập chữ điện : ")
+    let b1=a*1.678
+    let b2=a*1.734
+    let b3=a*2.014
+    let b4=a*2.536
+    let b5=a*2.834
+    let b6=a*2.927
+    if (0<a && a<=50)
+        document.write("Số tiền điện  : " +b1+ "vnd ");
+    if (51<a && a<=100)
+        document.write("Số tiền điện  : " +b2+ "vnd ");
+    if (101<a && a<=200)
+        document.write("Số tiền điện  : " +b3+ "vnd ");
+    if (201<a && a<=300)
+        document.write("Số tiền điện  : " +b4+ "vnd ");
+    if (301<a && a<=400)
+        document.write("Số tiền điện  : " +b5+ "vnd ");
+    if (a>400)
+        document.write("Số tiền điện  : " +b6+ "vnd ");
+</script>
+
+<!--BT11-->
+<script>
+    let a =+prompt("Số tiền lương :  ")
+    let b1=a*0.05
+    let b2=(a*0.1)-0.25
+    let b3=(a*0.15)-0.75
+    let b4=(a*0.2)-1.65
+    let b5=(a*0.25)-3.25
+    let b6=(a*0.3)-5.85
+    let b7=(a*0.35)-9.85
+    if (a>0 && a<=5)
+        document.write("Số tiền thuế: " +b1+ "tr");
+    else if (5<a && a<=10)
+        document.write("Số tiền thuế : " +b2+ "tr ");
+    else if (11<a && a<=18)
+        document.write("Số tiền thuế : " +b3+ "tr ");
+    else if (19<a && a<=32)
+        document.write("Số tiền thuế : " +b4+ "tr ");
+    else if (33<a && a<=52)
+        document.write("Số tiền thuế : " +b5+ "tr ");
+    else if (53<a<=80)
+        document.write("Số tiền thuế: " +b6+ "tr ");
+    else if (a>=81)
+        document.write("TSố tiền thuế : " +b7+ "tr ");
+</script>
+
+<!--BT12-->
+<script>
+    let a=parseFloat(prompt('Tiền lương mỗi tháng: '));
+    if (a>=10000000){
+        b=(a*20)/100;
+    } else if(a>=8000000) {
+        b=(a*15)/100
+    } else if(a>=6000000) {
+        b=(a*10)/100;
+    } else if(a>=3000000) {
+        b=(a*5)/100;
+    } else {
+        b=(a*0)/100;
+    }
+    alert('Tiền thuế mỗi tháng: '+ b+' VND');
+</script>
 </body>
 </html>

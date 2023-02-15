@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYEN TAP VONG LAP 02</title>
+</head>
+<body>
+<!--BT1-->
+<script>
+    const n = parseInt(prompt(" Nhập số bất kì: "));
+    let n1 = 0;
+    let n2 = 1;
+    let dem;
+    let T;
+    for (let i = 1; i <= n; i++) {
+        document.write(n1 + "<br>");
+        dem = n1 + n2;
+        n1 = n2;
+        n2 = dem;
+        T = n1 + n2 + dem;
+    }
+    document.write("Tổng dãy số Fibonacci là: " + T);
+</script>
+
+<!--BT2-->
+<script>
+    let n = +prompt(" Nhập 1 số bất kì: ")
+    let T=1;
+    for (let i = 0; i < n; i++) {
+        if (n < 0)
+            document.write("Vui lòng nhập lại");
+        else T = T * (n - i);
+    }
+    document.write("Giai thừa của một số nguyên dương là: "+T)
+</script>
+
+<!--BT3-->
+<!--C1-->
+<script>
+    let n =+prompt("Nhập giá trị n: ")
+    n = parseInt(n)
+    for(i=0;i<n;i++) {
+        for(j=0;j<=i;j++) {
+            document.writeln(" * ")
+        }
+        document.writeln("<br/>")
+    }
+</script>
+
+<!--C2-->
+<script>
+    let n =+prompt("Nhập giá trị n: ")
+    n = parseInt(n)
+    for(i=n;i>=1;i--) {
+        for(j=1;j<=i;++j) {
+            document.writeln(" * ")
+        }
+        document.writeln("<br/>")
+    }
+</script>
+
+<!--C3-->
+<script>
+    let n =+prompt("Nhập giá trị n: ")
+    n = parseInt(n)
+    for(i=1; i<=5; i++) {
+        for (j=5; j>i; j--) {
+            document.write("&nbsp;&nbsp;");
+        }
+        for (j=1; j<=i; j++) {
+            document.write("*");
+        }
+        document.write('<br>');
+
+    }
+    document.write('<br>');
+</script>
+
+<!--C4-->
+<script>
+    let n =+prompt("Nhập giá trị n: ")
+    n = parseInt(n)
+    for(i=1; i<=5; i++) {
+        for(j=1; j<i; j++) {
+            document.write("&nbsp;&nbsp;");
+        }
+        for(j=5; j>=i; j--) {
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+</script>
+
+<!--BT4-->
+<script>
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 20; j++) {
+            if (i===0 || j===0||j===19||i===4){
+                document.write("*");
+            }else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+
+<!--BT5-->
+<script>
+    let m =+prompt("Nhập số tiền gốc : ");
+    let r = 3/100;
+    let n =+prompt("Nhập số tháng vay : ");
+    let T;
+    for (n=0;n<=m;n++){
+        T=(((m*r)/12)*n);
+    }
+    document.write("Tiền lãi là : "+T+"đ");
+</script>
+</body>
+</html>

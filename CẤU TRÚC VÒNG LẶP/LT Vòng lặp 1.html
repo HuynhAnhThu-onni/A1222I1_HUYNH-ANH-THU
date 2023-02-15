@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYEN TAP VONG LAP 1</title>
+</head>
+<body>
+
+<!--BT1-->
+<script>
+    let n =+ prompt("Nhập số bất kì: ")
+    for(var i=0; i<n; i++){
+        document.write(" Số: " + i + "<br>");
+        if (i===99){
+            document.write("Hoàn thành")
+        }
+    }
+</script>
+
+<!--BT2-->
+<script>
+    let n =+prompt("Thông tin nhiệt độ hiện tại:")
+    for( let i=0; i<=n; i++){
+        if (n>=100)
+            alert("Giảm nhiệt độ");
+        else (n<=20)
+            alert("Tăng nhiệt độ");
+    }
+</script>
+
+<!--BT3-->
+<script>
+    let n =+prompt("Nhập số lượng ban đầu:");
+    let n1=0;
+    let n2=1;
+    let dem;
+    for(let i=0; i<20; i++){
+        document.write(n1+"<br>");
+        // document.write(n2);
+        dem = n1 + n2 ;
+        n1 = n2;
+        n2 = dem;
+    }
+</script>
+
+<!--BT4-->
+<script>
+    let n =+prompt("Nhập số lượng ban đầu:");
+    let n1=0;
+    let n2=1;
+    let dem;
+    for(let i=0; i<20; i++){
+        document.write(n1+"<br>");
+        // document.write(n2);
+        dem = n1 + n2 ;
+        n1 = n2;
+        n2 = dem;
+        if (i%5===0 || i%5===5){
+            document.write("Số "+i+" Chia hết cho 5"+"<br>");
+        }
+    }
+</script>
+
+<!--BT5-->
+<script>
+    let n =+prompt("Nhập số lượng ban đầu:");
+    let n1=0;
+    let n2=1;
+    let dem;
+    let T;
+    for(let i=0; i<20; i++){
+        document.write(n1+"<br>");
+        dem = n1 + n2 ;
+        n1 = n2;
+        n2 = dem;
+        if ( T = n1 + n2 + dem ){
+        }
+    }
+    document.write("Tổng của 20 số đầu tiên"+T);
+</script>
+
+<!--BT6-->
+<script>
+    let n=+prompt("Nhập số tự nhiên:")
+    for (let i=0; i<30; i++){
+        if (i%7===0 || i%7===7) {
+            document.write("Số chia hết cho 7 là : " + i + "<br>");
+        }
+    }
+</script>
+
+<!--BT7-->
+<script>
+    let n = +prompt("Nhập số bất kì :")
+    for (let i = 0; i <= 100; i++) {
+        if (i % 3 === 0 || i % 3 === 3) {
+            document.write("Số chia hết cho 3 là : "+i+ "=>"+" Fizz "+ "<br>");
+        }
+        if (i % 5 === 0 || i % 5 === 5) {
+            document.write("Số chia hết cho 5 là : "+i+ "=>"+"Buzz "+ "<br>");
+        }
+        if (i % 3 === 0 || i % 3 === 3 && i % 5 === 0 || i % 5 === 5) {
+            document.write("Số chia hết cho 3 và 5 là :"+i+ "=>"+" FizzBuzz "+ "<br>");
+        }
+    }
+</script>
+
+<!--BT8-->
+<input type="button" onclick="play()" value="START">
+<script>
+    function play() {
+        let min = + prompt("Nhập khoảng số nhỏ nhất bạn muốn đoán:");
+        let max = + prompt("Nhập khoảng số lớn nhất bạn muốn đoán: :");
+        let Random = (Math.floor(Math.random() * (max - min + 1) ) + min);
+        let solannhap = 1;
+        let i =+prompt("Nhập khoảng số bạn muốn đoán: ");
+        do {
+            if (i > Random){
+                i = prompt("Hãy nhập số khác nhỏ hơn:");
+            }
+            if (i < Random){
+                i = prompt("Hãy nhập số khác lớn hơn:");
+            }
+            if (i === Random){
+                i = alert("Chúc mừng bạn đã đoán đúng! ");
+            }
+            solannhap++;
+            if(solannhap===3){
+                alert("Bạn đã thua! Nhấn START để chơi lại. ");
+                break;
+            }
+        }
+        while (i != Random);
+    }
+</script>
+</body>
+</html>

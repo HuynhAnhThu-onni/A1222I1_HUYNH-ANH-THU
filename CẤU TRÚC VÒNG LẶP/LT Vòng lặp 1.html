@@ -20,6 +20,10 @@
 <!--BT2-->
 <script>
     let n =+prompt("Thông tin nhiệt độ hiện tại:")
+    while(n<0)
+    {
+        n =+prompt("Thông tin nhiệt độ bé hơn 0, vui lòng nhập lại:")
+    }
     for( let i=0; i<=n; i++){
         if (n>=100)
             alert("Giảm nhiệt độ");
@@ -36,7 +40,6 @@
     let dem;
     for(let i=0; i<20; i++){
         document.write(n1+"<br>");
-        // document.write(n2);
         dem = n1 + n2 ;
         n1 = n2;
         n2 = dem;
@@ -51,7 +54,6 @@
     let dem;
     for(let i=0; i<20; i++){
         document.write(n1+"<br>");
-        // document.write(n2);
         dem = n1 + n2 ;
         n1 = n2;
         n2 = dem;

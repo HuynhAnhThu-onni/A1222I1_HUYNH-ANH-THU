@@ -6,22 +6,24 @@
 </head>
 <body>
 <script>
-    let numbers = parseInt(prompt("Nhập số lượng số nguyên tố cần in ra: "));
+    let numbers = prompt("Nhập số lượng số nguyên tố cần in ra: ");
     let count = 0;
+    let i = 2;
     let N = 2;
-    let dem = 0;
-    while(count < numbers) {
-        for (let i = 2; i < N; i++) {
-            if(N % i == 0) {
-                dem++;
+    while(count < numbers)
+    {
+        for (let j = 2; j < i; j++)
+        {
+            if(i % j === 0) {
+                N++;
             }
         }
-        if (dem == 0) {
-            document.write(N + "<br>");
+        if (N === 0) {
+            document.write(i + "<br>");``
             count++;
         }
-        N++;
-        dem=0;
+        i++;
+        N=0;
     }
 </script>
 </body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> LUYỆN TẬP MẢNG 01</title>
+</head>
+<body>
+<!--BT1: tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10-->
+<script>
+    let array = [22, 40, 30, 3, 26, 6, 36, 13, 8, 27];
+    let dem = 0;
+    for (i = 0; i < array.length; i++) {
+        if (array[i] >= 10) {
+            dem++
+        }
+    }
+    document.write("Có tất cả " + dem + " số nguyên lớn hơn hoặc bằng 10");
+</script>
+
+<!--BT2: hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử-->
+<script>
+    let numbers = [10, 7, 80, -8, 20, 40, 22, -3, 9, 200];
+    let max = numbers[0];
+    let index = 0;
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+            index = i;
+        }
+    }
+    alert("Gía trị lớn nhất: " + max + " vị trí thứ " + index);
+</script>
+
+<!--BT3: Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng-->
+<script>
+    let array = [41, 25, 39, 45, 11, 18, 17, 24, 23, 8];
+    let max = array[0];
+    let index = 0;
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
+        }
+    }
+    document.write("Số lớn nhất trong mảng:" + max + "<br>");
+    let tb = 0;
+    let sum = 0;
+    for (let i = 0; i < array.length; i++){
+        sum += array[i];
+    }
+    tb = sum/array.length;
+    document.write("Trung bình các phần tử trong mảng: " + tb);
+</script>
+
+<!--BT4:hởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.-->
+<script>
+    let array = new Array(5);
+    for(let index = 0; index < array.length; index++) {
+        let numbers = parseInt(prompt("Nhập số nguyên tại index = " + index));
+        array[index] = numbers;
+    }
+    document.write("Dãy số đã được nhập vào mảng: " + array + "<br>");
+    document.write("Dãy số sau khi đảo ngược: " + array.reverse());
+</script>
+
+<!--BT5: Viết chương trình đếm số nguyên âm trong một chuỗi -->
+<script>
+    let array = [10, 7, 80, -8, 20, 40, 22, -3, 9, 200];
+    let dem = 0;
+    for (i = 1; i < array.length; i++) {
+        if (array[i]<0) {
+            dem++;
+        }
+    }
+    document.write("Có tất cả " + dem + " số nguyên âm trong mảng!");
+</script>
+
+<!--BT6-->
+<script>
+    let array = new Array(5);
+    for(let index = 0; index <  array.length; index++){
+        let numbers = parseInt(prompt(" Nhập số nguyên bất kì: "));
+        array[index] = numbers;
+    }
+    for(let value of array){
+        document.write(value + " ");
+    }
+    let v = parseInt(prompt("Nhập số nguyên v "));
+    let indexV = array.indexOf(v);
+    if (indexV !== -1)
+    {
+        alert("Số " + v + " nằm trong mảng");
+    } else {
+        alert("Số " + v + " không có trong mảng!");
+    }
+</script>
+
+<!--BT7-->
+
+<!--BT8-->
+<script>
+    let array = new Array (10);
+    for(i = 0; i < 10; i++){
+        let numbers = parseInt(prompt("Nhập vào mảng các số nguyên bất kì"));
+        array[i]= numbers;
+    }
+    array.sort(function(a,b){
+        return(b-a);
+    })
+    document.write(array);
+</script>
+
+<!--BT9-->
+<script>
+    let x = [0,1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let y = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+    let t = Array (20);
+    t = x.concat(y);
+    document.write("Dãy số sau khi nối 2 mảng: " + t);
+</script>
+</body>
+</html>

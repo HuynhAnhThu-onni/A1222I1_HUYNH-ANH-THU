@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYỆN TẬP MẢNG 02</title>
+</head>
+<body>
+<!--BT1-->
+<script>
+    let x = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for (let i in x)
+    {
+        document.write("row " + i);
+        for (let j in x[i])
+        {
+            document.write(" " + x[i][j]+ "<br>");
+        }
+    }
+</script>
+
+<!--BT2-->
+<script>
+    let array = ['c','s','c','2','6','1'];
+    array = array.reverse();
+    document.write(array.join(''));
+</script>
+
+<!--BT3-->
+<!--VD: 1 2 3 4 5 A 1 2 3 T 0-->
+<script>
+    let array = prompt("Nhập kí tự bất kì:");
+    document.write("Kích thước của mảng: " + array.length + "<br>");
+    let dem = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (isNaN(array[i])) {
+            dem++;
+        }
+    }
+    document.write("Số ký tự có trong mảng: " + dem);
+</script>
+
+<!--BT4-->
+<script>
+    let array =prompt("Nhập số từ bất kì: " );
+    let dem = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (isNaN = array) {
+            dem++;
+        }
+    }
+    document.write("Số từ trong mảng là: " + dem);
+</script>
+
+<!--BT5-->
+<!--VD:12345-78952 =>2-->
+<script>
+    let array1 =prompt("Nhập chuỗi thứ 1: ");
+    let array2 =prompt("Nhập chuỗi thứ 2: ");
+    let dem = 0;
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array2.length; j++) {
+            if (array1[i] === array2[j]) {
+                dem++;
+            }
+        }
+    }
+    document.write("Số ký tự giống nhau của hai mảng là: " + dem);
+</script>
+
+<!--BT6-->
+
+</body>
+</html>

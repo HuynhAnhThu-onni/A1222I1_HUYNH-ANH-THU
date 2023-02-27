@@ -47,10 +47,10 @@
 
 <!--BT4-->
 <script>
-    let array =prompt("Nhập số từ bất kì: " );
+    let a =prompt("Nhập số từ bất kì: " );
     let dem = 0;
-    for (let i = 0; i < array.length; i++) {
-        if (isNaN = array) {
+    for (let i = 0; i < a.length; i++) {
+        if (isNaN = a) {
             dem++;
         }
     }
@@ -74,6 +74,15 @@
 </script>
 
 <!--BT6-->
-
+<script>
+    let arr1 = prompt("Nhap vao: ");
+    let arr= []
+    for (let i = 0; i <arr1.length ; i++) {
+        arr[i] = arr1.slice(i,i+1);
+        if( arr[i] === "-"){
+            arr[i] = "_";
+        }
+    }
+    document.write("Chuoi moi: "+arr.join("")+"<br>");
 </body>
 </html>

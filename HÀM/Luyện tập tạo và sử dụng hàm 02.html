@@ -17,7 +17,7 @@
 </script>
 
 <!--BT2-->
-<!--<script>-->
+<script>
     function xd() {
         let r = parseFloat(prompt("Nhập bán kính"));
         let cv;
@@ -93,6 +93,18 @@
 
 <!--BT8-->
 <script>
+    let str = prompt("Nhập vào một chuỗi bất kì:");
+    let arr =  str.split("");
+    let newArray = [];
+    function daomang() {
+        newArray = arr.reverse();
+        document.write("Mảng đảo ngược: " + newArray.join(""));
+    }
+    daomang();
+</script>
+
+<!--BT9-->
+<script>
     let arr= prompt(" nhập vào mảng kí tự");
     let a = prompt("nhập vào 1 kí tự");
     let arr1= [];
@@ -110,7 +122,7 @@
             return -1;
         }
     }
-    document.write("So ki tu trong mang:  "+kiemtra(arr,a))
+    document.write("Số kí tự trong mảng:  "+kiemtra(arr,a))
 </script>
 </body>
 </html>

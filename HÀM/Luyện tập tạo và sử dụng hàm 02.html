@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYỆN TẬP TẠO VÀ SỬ DỤNG HÀM 02</title>
+</head>
+<body>
+<!--BT1-->
+<script>
+    function bp() {
+        let a = parseFloat(prompt("Nhập vào 1 số nguyên"));
+        let b;
+        b = a * a;
+        alert(b);
+    }
+    bp();
+</script>
+
+<!--BT2-->
+<!--<script>-->
+    function xd() {
+        let r = parseFloat(prompt("Nhập bán kính"));
+        let cv;
+        let dt;
+        cv = 2 * 3.14 * r;
+        dt = r * r * 3.14;
+        document.write("Chu vi: " + cv + "<br>");
+        document.write("Diện tích: " + dt);
+    }
+    xd()
+</script>
+
+<!--BT3-->
+<script>
+    function gt() {
+        let a = parseInt(prompt("Nhập một số nguyên bất kì"));
+        let b = 1;
+        for (let i = 1; i <= a; i++) {
+            b = b * i;
+        }
+        document.write("Kết quả: " + b);
+    }
+    gt()
+</script>
+
+<!--BT4-->
+<script>
+    function kt() {
+        let a = parseInt(prompt("Nhập vào một số nguyên hoặc một kí tự"));
+        if (Number.isInteger(a)) {
+            alert("True");
+        } else {
+            alert("False");
+        }
+    }
+    kt()
+</script>
+
+<!--BT5-->
+<script>
+    function min() {
+        let a = parseInt(prompt("Nhập vào  số nguyên thứ 1: "));
+        let b = parseInt(prompt("Nhập vào  số nguyên thứ 2: "));
+        let c = parseInt(prompt("Nhập vào  số nguyên thứ 3: "));
+        alert(Math.min(a, b, c) + " là số nhỏ nhất! ");
+    }
+    min();
+</script>
+
+<!--BT6-->
+<script>
+    function kt() {
+        let a = parseInt(prompt("Nhập vào một số nguyên"));
+        if (a>0) {
+            alert("True");
+        } else {
+            alert("False");
+        }
+    }
+    kt()
+</script>
+
+<!--BT7-->
+<script>
+    function hoandoi() {
+        let number1 = parseInt(prompt("Nhập sô nguyên thứ nhất"));
+        let number2 = parseInt(prompt("Nhập sô nguyên thứ hai"));
+        [number1, number2] = [number2, number1];
+        alert([number1, number2]);
+    }
+    hoandoi()
+</script>
+
+<!--BT8-->
+<script>
+    let arr= prompt(" nhập vào mảng kí tự");
+    let a = prompt("nhập vào 1 kí tự");
+    let arr1= [];
+
+    function kiemtra(array,n) {
+        let count = 0 ;
+        for (let i = 0; i <array.length ; i++) {
+            arr[i]=array.slice(i,i+1);
+            if(arr[i] === n ){
+                count ++;
+            }
+        }
+        return count;
+        if(count ===0){
+            return -1;
+        }
+    }
+    document.write("So ki tu trong mang:  "+kiemtra(arr,a))
+</script>
+</body>
+</html>

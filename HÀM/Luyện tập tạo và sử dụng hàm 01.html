@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYỆN TẬP TẠO VÀ SỬ DỤNG HÀM 01</title>
+</head>
+<body>
+<!--BT1-->
+<script>
+    function alertMessage(a) {
+        alert(a);
+    }
+    alertMessage("Xin chào");
+</script>
+
+<!--BT2-->
+<script>
+    let a=+prompt("Nhập số bất kì: ");
+    document.write("Số vừa nhập : "+a+"<br>")
+    function numbers(firstNum) {
+        firstNum+=1;
+        document.write("Gía trị sau khi thay đổi: "+firstNum);
+    }
+    numbers(a);
+</script>
+
+<!--BT3-->
+<script>
+    function kt() {
+        let number1 = parseInt(prompt("Nhập số nguyên thứ nhất"));
+        let number2 = parseInt(prompt("Nhập số nguyên thứ hai"));
+        let sum = number1 + number2 ;
+        if (number1 > number2) {
+            alert(number1 + " lớn hơn " + number2)
+        } else {
+            alert("Tổng hai tham số: " + sum);
+        }
+    }
+    kt()
+</script>
+
+<!--BT4-->
+<script>
+    function addNumbers() {
+        let result;
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+    alert(addNumbers());
+    result = 0;
+    result = addNumbers();
+</script>
+
+<!--BT5-->
+<input type="text" id="txtValue">
+<input type="button" value="Search" onclick="star()">
+<div id="result"></div>
+<script>
+    let arr1=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+    let arr2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"];
+    function star() {
+        tu = document.getElementById("txtValue").value;
+        for (let i = 0; i < arr1.length; i++) {
+            if (tu === arr1[i]) {
+                document.write(arr2[i]);
+                break;
+            } else {
+                document.write("Không tìm thấy giá trị");
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>

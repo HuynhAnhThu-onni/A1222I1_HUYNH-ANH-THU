@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> XÂY DỰNG LỚP MÔ TẢ TEMPERATURE</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+        getcf() {
+            let cf = this.c * 1.8 + 32;
+            return cf;
+        }
+
+        getck() {
+            let ck = this.c * 373.15;
+            return ck;
+        }
+    }
+    let c =+prompt("Nhập độ C: ");
+    let kq= new Temperature(c);
+
+    document.write("Độ F là: " + kq.getcf()+"<br>");
+    document.write("Độ Kenvin là: " + kq.getck());
+</script>
+</body>
+</html>

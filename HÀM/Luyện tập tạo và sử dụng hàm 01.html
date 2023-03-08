@@ -26,9 +26,9 @@
 
 <!--BT3-->
 <script>
-    function kt() {
-        let number1 = parseInt(prompt("Nhập số nguyên thứ nhất"));
-        let number2 = parseInt(prompt("Nhập số nguyên thứ hai"));
+    let number1 = parseInt(prompt("Nhập số nguyên thứ nhất"));
+    let number2 = parseInt(prompt("Nhập số nguyên thứ hai"));
+    function kiemTra() {
         let sum = number1 + number2 ;
         if (number1 > number2) {
             alert(number1 + " lớn hơn " + number2)
@@ -36,15 +36,15 @@
             alert("Tổng hai tham số: " + sum);
         }
     }
-    kt()
+    kiemTra()
 </script>
 
 <!--BT4-->
 <script>
     function addNumbers() {
         let result;
-        firstNum = 4;
-        secondNum = 8;
+        Num1 = 4;
+        Num2 = 8;
         result = firstNum + secondNum;
         return result;
     }
@@ -55,23 +55,26 @@
 
 <!--BT5-->
 <input type="text" id="txtValue">
-<input type="button" value="Search" onclick="star()">
+<input type="button" value="Search" onclick="findStar()">
 <div id="result"></div>
 <script>
     let arr1=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
     let arr2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"];
-    function star() {
+    let flag = false;
+    function findStar() {
         tu = document.getElementById("txtValue").value;
-        for (let i = 0; i < arr1.length; i++) {
+        for (let i = 0; i <= arr1.length; i++) {
             if (tu === arr1[i]) {
                 document.write(arr2[i]);
-                break;
-            } else {
-                document.write("Không tìm thấy giá trị");
+                flag = true;
                 break;
             }
         }
+        if (flag === false){
+            document.write("Khong tim thay gia tri ");
+        }
     }
+    findStar();
 </script>
 </body>
 </html>

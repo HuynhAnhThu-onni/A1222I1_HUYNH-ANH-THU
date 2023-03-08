@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> DỰNG LỚP MÔ TẢ HÌNH CHỮ NHẬT  </title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+
+        getchuvi() {
+            let chuvi = (this.height + this.width) * 2;
+            return chuvi;
+        }
+
+        getdientich() {
+            let dientich = (this.height * this.width);
+            return dientich;
+        }
+    }
+    let height =+prompt("Nhập chiều dài: ");
+    let width =+prompt("Nhập chiều rộng: ");
+    let hcn = new Rectangle(height, width);
+
+    document.write("Chu vi hình chữ nhật: " + hcn.getchuvi()+"<br>");
+    document.write("Diện tích hình chữ nhật: " + hcn.getdientich());
+</script>
+</body>
+</html>

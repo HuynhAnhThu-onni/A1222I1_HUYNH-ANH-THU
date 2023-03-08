@@ -7,18 +7,18 @@
 <body>
 <!--BT1-->
 <script>
-    function bp() {
+    function binhPhuong() {
         let a = parseFloat(prompt("Nhập vào 1 số nguyên"));
         let b;
         b = a * a;
         alert(b);
     }
-    bp();
+    binhPhuong();
 </script>
 
 <!--BT2-->
 <script>
-    function xd() {
+    function xayDung() {
         let r = parseFloat(prompt("Nhập bán kính"));
         let cv;
         let dt;
@@ -27,12 +27,12 @@
         document.write("Chu vi: " + cv + "<br>");
         document.write("Diện tích: " + dt);
     }
-    xd()
+    xayDung()
 </script>
 
 <!--BT3-->
 <script>
-    function gt() {
+    function tinhGiaiThua() {
         let a = parseInt(prompt("Nhập một số nguyên bất kì"));
         let b = 1;
         for (let i = 1; i <= a; i++) {
@@ -40,12 +40,12 @@
         }
         document.write("Kết quả: " + b);
     }
-    gt()
+    tinhGiaiThua()
 </script>
 
 <!--BT4-->
 <script>
-    function kt() {
+    function kiemTra() {
         let a = parseInt(prompt("Nhập vào một số nguyên hoặc một kí tự"));
         if (Number.isInteger(a)) {
             alert("True");
@@ -53,23 +53,23 @@
             alert("False");
         }
     }
-    kt()
+    kiemTra()
 </script>
 
 <!--BT5-->
 <script>
-    function min() {
+    function findMin() {
         let a = parseInt(prompt("Nhập vào  số nguyên thứ 1: "));
         let b = parseInt(prompt("Nhập vào  số nguyên thứ 2: "));
         let c = parseInt(prompt("Nhập vào  số nguyên thứ 3: "));
         alert(Math.min(a, b, c) + " là số nhỏ nhất! ");
     }
-    min();
+    findMin();
 </script>
 
 <!--BT6-->
 <script>
-    function kt() {
+    function kiemTra() {
         let a = parseInt(prompt("Nhập vào một số nguyên"));
         if (a>0) {
             alert("True");
@@ -77,18 +77,18 @@
             alert("False");
         }
     }
-    kt()
+    kiemTra()
 </script>
 
 <!--BT7-->
 <script>
-    function hoandoi() {
+    function hoanDoi() {
         let number1 = parseInt(prompt("Nhập sô nguyên thứ nhất"));
         let number2 = parseInt(prompt("Nhập sô nguyên thứ hai"));
         [number1, number2] = [number2, number1];
         alert([number1, number2]);
     }
-    hoandoi()
+    hoanDoi()
 </script>
 
 <!--BT8-->
@@ -96,11 +96,11 @@
     let str = prompt("Nhập vào một chuỗi bất kì:");
     let arr =  str.split("");
     let newArray = [];
-    function daomang() {
+    function daoMang() {
         newArray = arr.reverse();
         document.write("Mảng đảo ngược: " + newArray.join(""));
     }
-    daomang();
+    daoMang();
 </script>
 
 <!--BT9-->
@@ -109,7 +109,7 @@
     let a = prompt("nhập vào 1 kí tự");
     let arr1= [];
 
-    function kiemtra(array,n) {
+    function kiemTra(array,n) {
         let count = 0 ;
         for (let i = 0; i <array.length ; i++) {
             arr[i]=array.slice(i,i+1);
@@ -122,7 +122,7 @@
             return -1;
         }
     }
-    document.write("Số kí tự trong mảng:  "+kiemtra(arr,a))
+    document.write("Số kí tự trong mảng:  "+kiemTra(arr,a))
 </script>
 </body>
 </html>

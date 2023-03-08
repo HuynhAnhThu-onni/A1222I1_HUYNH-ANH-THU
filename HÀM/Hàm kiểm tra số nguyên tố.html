@@ -7,22 +7,22 @@
 <body>
 <script>
     function isPrime(n) {
-        let kiemtra = true;
+        let kiemTra = true;
         if (n < 2) {
-            kiemtra = false;
+            kiemTra = false;
         } else {
             for (let i = 2; i < n; i++) {
                 if (n % i === 0) {
-                    kiemtra = false;
+                    kiemTra = false;
                     break;
                 }
             }
         }
-        return kiemtra;
+        return kiemTra;
     }
     for (let i = 0; i < 10000; i++) {
         if (isPrime(i)){
-            document.write(i+"<br>")
+            document.write(i+"<br>");
         }
     }
 </script>

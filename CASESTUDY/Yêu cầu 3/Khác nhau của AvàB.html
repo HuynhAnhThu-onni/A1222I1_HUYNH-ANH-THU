@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khác nhau giữa A và B</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = parseInt(prompt("Nhập độ dài mảng A"));
+    let diffrent = [];
+    for (let i = 0; i < c; i++){
+        a.push(parseInt(prompt("Nhập số nguyên vào mảng A")));
+    }
+    let d = parseInt(prompt("Nhập độ dài mảng B"));
+    for (let i = 0; i < d; i++){
+        b.push(parseInt(prompt("Nhập số nguyên vào mảng B")));
+    }
+    for (let i = 0; i < d; i++) {
+        if (a.indexOf(b[i]) === -1 && diffrent.indexOf(b[i]) === -1) {
+            diffrent.push(b[i]);
+        }
+    }
+    diffrent.sort(function (e,f) {return e - f});
+    document.write("Mảng A sau khi được nhập: [" + a + "]" + "<br>");
+    document.write("Mảng B sau khi được nhập: [" + b + "]" + "<br>");
+    document.write("Phần tử ở mảng B không xuất hiện ở mảng A: [" + diffrent + "]");
+</script>
+
+</body>
+</html>

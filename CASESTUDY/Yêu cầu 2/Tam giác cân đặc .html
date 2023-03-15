@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 2/BT2</title>
+</head>
+<script>
+    let a = parseInt(prompt("Nhập chiều cao"));
+    let b = (a * 2) - 1;
+    for (let i = 1; i <= a; i++) {
+        for (let j = 0; j < (b / 2) - i; j++) {
+            document.write("&ensp;")
+        }
+        for (let m = 0; m < i * 2 - 1; m++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+<body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 1 BT1</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số tiền"));
+    let thue = 0;
+    let luong = 0;
+    if (a < 7000000) {
+        thue = a * 5 /100;
+        luong = a - thue;
+        document.write("Số tiền phải đóng thuế: " + thue + "<br>");
+        document.write("Số tiền lương nhận được sau khi đóng thuế: " + luong);
+    } else if (7000000 < a < 15000000) {
+        thue = a * 10 / 100;
+        luong = a - thue;
+        document.write("Số tiền phải đóng thuế: " + thue + "<br>");
+        document.write("Số tiền lương nhận được sau khi đóng thuế: " + luong);
+    } else {
+        thue = a * 20 / 100;
+        luong = a - thue;
+        document.write("Số tiền phải đóng thuế: " + thue + "<br>");
+        document.write("Số tiền lương nhận được sau khi đóng thuế: " + luong);
+    }
+</script>
+</body>
+</html>

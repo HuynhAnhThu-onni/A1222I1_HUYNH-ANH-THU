@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng b là prefix sums của Mảng a </title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = parseInt(prompt("Nhập độ dài của mảng số nguyên"));
+    let sum = 0;
+    for (let i = 0; i < c; i++) {
+        a.push(parseInt(prompt("Nhập số nguyên bất kỳ")));
+    }
+    for (let i = 0; i < a.length; i++) {
+        sum = sum + a[i];
+        b[i] = sum;
+    }
+    document.write("Mảng a sau khi được nhập từ bàn phím: [" + a +  "]" +"<br>");
+    document.write("Prefix Sums: [" + b + "]");
+</script>
+
+</body>
+</html>

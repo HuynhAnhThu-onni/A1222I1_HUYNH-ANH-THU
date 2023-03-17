@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 4/BT1</title>
+</head>
+<body>
+<script>
+    function chuanHoa(str) {
+        var str = str.toLowerCase();
+        var arr = str.split(" ");
+        var result = "";
+        for (var i = 0; i < arr.length; i++) {
+            result += arr[i].charAt(0).toUpperCase() + arr[i].slice(1) + " ";
+        }
+        return result;
+    };
+    function timTuDaiNhat(str) {
+        var str = chuanHoa(str);
+        var arr = str.split(" ");
+        var max = 0;
+        var result = "";
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].length > max) {
+                max = arr[i].length;
+                result = arr[i];
+            }
+        }
+        return result;
+    };
+    var str = prompt("Nhập xâu ký tự: ");
+    document.write("Xâu trước khi chuẩn hóa: " + str + "<br>");
+    document.write("Xâu sau khi chuẩn hóa: " + chuanHoa(str) + "<br>");
+    document.write("Từ dài nhất trong xâu: " + timTuDaiNhat(str));
+</script>
+</body>
+</html>

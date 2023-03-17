@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 3/BT3</title>
+</head>
+<body>
+<script>
+    let max;
+    let numerators = prompt("Nhập vào danh sách số bất kì : ").split(' ');
+    let denominators = prompt("Nhập vào mẫu số : ").split(' ');
+    if (numerators.length === denominators.length) {
+        max = numerators[0] % denominators[0];
+        console.log(max)
+        for (let i = 1; i < numerators.length; i++) {
+           if (numerators[i] % denominators[i] >= max)
+               max = numerators[i] % denominators[i];
+            console.log(max)
+        }
+    }
+    document.write("Có chỉ số là: " + max)
+</script>
+</body>
+</html>

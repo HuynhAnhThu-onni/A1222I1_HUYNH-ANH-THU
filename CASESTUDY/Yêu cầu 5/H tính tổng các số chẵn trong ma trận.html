@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 5/BT1</title>
+</head>
+<body>
+<script>
+    function tinhTongSoChan(m, n) {
+        let tong = 0;
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                let so = parseInt(prompt("Nhập số thứ: " + (i * n + j + 1)));
+                if (so % 2 === 0) {
+                    tong += so;
+                }
+            }
+        }
+        return tong;
+    }
+    let m = parseInt(prompt("Nhập số m: "));
+    let n = parseInt(prompt("Nhập số n: "));
+    let tong = tinhTongSoChan(m, n);
+    document.write("Tổng các số chẵn trong ma trận là: " + tong);
+</script>
+</body>
+</html>

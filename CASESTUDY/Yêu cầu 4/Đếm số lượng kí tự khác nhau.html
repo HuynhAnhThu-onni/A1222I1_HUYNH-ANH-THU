@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 4/BT2</title>​
+<body>
+<script>
+    function differentSymbolsNaive(s) {
+        let count = 0;
+        for (let i = 0; i < s.length; i++) {
+            for (let j = i + 1; j < s.length; j++) {
+                if (s[i] === s[j]) {
+                    count++;
+                }
+            }
+        }
+        return s.length - count;
+    }
+    let s = prompt("Nhập vào xâu kí tự.")
+    alert(differentSymbolsNaive(s));
+</script>
+</body>
+</html>

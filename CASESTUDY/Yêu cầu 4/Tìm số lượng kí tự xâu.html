@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 4/BT3</title>
+<body>
+<script>
+    function commonCharacterCount(s1, s2) {
+        let count = 0;
+        let s1Arr = s1.split(''); 
+        let s2Arr = s2.split('');
+        for (let i = 0; i < s1Arr.length; i++) {
+            for (let j = 0; j < s2Arr.length; j++) {
+                if (s1Arr[i] === s2Arr[j]) {
+                    count++;
+                    s2Arr[j] = '*';
+                    break;
+                }
+            }
+        }
+        return count;
+    }
+    let s1 = prompt("Nhập xâu kí tự thứ nhất: ")
+    let s2 = prompt("Nhập xâu kí tự thứ hai: ")
+    alert(commonCharacterCount(s1, s2));
+</script>
+</body>
+</html>

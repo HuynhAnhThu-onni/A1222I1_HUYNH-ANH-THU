@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 5/BT2</title>
+</head>
+<body>
+<script>
+    function isPrimeNumber(n) {
+        if (n < 2) return false;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    document.write("Các số nguyên tố trong mảng 2 chiều: ");
+    function countPrimeNumber(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (isPrimeNumber(arr[i][j])) {
+                    document.write(arr[i][j] + " ");
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    let arr = [[1, 2, 17, 4],
+        [3, 8, 9, 2],
+        [11, 5, 10, 14],
+        [13, 22, 15, 16],
+        [17, 9, 6, 21]];
+    document.write("<br>Số lượng số nguyên tố trong mảng: " + countPrimeNumber(arr));
+</script>
+</body>
+</html>
